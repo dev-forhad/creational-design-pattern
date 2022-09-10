@@ -6,9 +6,15 @@ namespace SOLID.DIP
 {
     public class BusinessLogicLayer
     {
+        private readonly DataAccessLayer DAL;
         public BusinessLogicLayer()
         {
+            DAL = new DataAccessLayer();
+        }
 
+        public void Save(Object details)
+        {
+            DAL.Save(details);
         }
     }
 

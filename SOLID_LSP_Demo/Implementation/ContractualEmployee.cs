@@ -14,7 +14,6 @@ namespace SOLID_LSP_Demo.Implementation
         }
         public string Name { get; set; }
         public decimal Salary { get; set; }
-
         public decimal GetYearlySalary()
         {
             return this.Salary * 12;

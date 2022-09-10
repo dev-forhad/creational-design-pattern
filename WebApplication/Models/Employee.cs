@@ -25,6 +25,7 @@ namespace WebApplication.Models
         public double? MedicalAllowanc { get; set; }
 
         public int EmployeeTypeId { get; set; }
+        public string ComputerDetails { get; set; }
         [ForeignKey("EmployeeTypeId")]
         public virtual EmployeeType EmployeeType { get; set; }
     }

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using WebApplication;
+using WebApplication.Factory.AbstractFactory;
 using WebApplication.Factory.FactoryMethod;
 using WebApplication.Manager;
 using WebApplication.Models;
@@ -65,6 +66,12 @@ namespace WebApplication.Controllers
             {
                 BaseEmployeeFactory empFactory = new Factory.FactoryMethod.EmployeeManagerFactory().CreateFactory(employee);
                 empFactory.ApplySalary();
+
+                #region Abstract Factory Method
+                IComputerFactory factory = new EmployeeSystemFactory().Create(employee);
+                EmployeeSystemManager manager = new EmployeeSystemManager(factory);
+                employee.ComputerDetails = manager.GetSystemDetails();
+                #endregion
 
                 _context.Add(employee);
                 await _context.SaveChangesAsync();
