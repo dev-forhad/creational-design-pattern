@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SOLID_LSP_Demo", "SOLID_LSP_Demo\SOLID_LSP_Demo.csproj", "{556A5F31-1762-41EE-9B4B-C9FD10709B44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID", "SOLID\SOLID.csproj", "{BA431F23-3D21-4CC4-B306-758464D006CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SOLID", "SOLID\SOLID.csproj", "{BA431F23-3D21-4CC4-B306-758464D006CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreationalPattern", "CreationalPattern\CreationalPattern.csproj", "{4BB05338-C5A8-4DA2-98A3-867718CD22A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BA431F23-3D21-4CC4-B306-758464D006CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA431F23-3D21-4CC4-B306-758464D006CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA431F23-3D21-4CC4-B306-758464D006CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BB05338-C5A8-4DA2-98A3-867718CD22A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BB05338-C5A8-4DA2-98A3-867718CD22A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BB05338-C5A8-4DA2-98A3-867718CD22A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BB05338-C5A8-4DA2-98A3-867718CD22A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
